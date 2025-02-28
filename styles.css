@@ -413,7 +413,8 @@ body {
 }
 .actual__list__item {
   position: relative;
-  width: 292px;
+  /* width: 292px; */
+  width: 310px;
   height: 755px;
   border-radius: 20px;
   background-color: var(--second-background-color);
@@ -485,7 +486,7 @@ body {
   color: #e5e5e5;
 }
 .actual__list {
-  width: 650px;
+  width: 680px;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -542,7 +543,10 @@ body {
 
 .responsebilities__item__button {
   border: 1px solid #fa5533;
-  display: table;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 30px;
   padding: 6px 14px;
   background-color: var(--second-background-color);
