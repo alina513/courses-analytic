@@ -427,6 +427,7 @@ body {
   width: 220px;
 }
 .actual__list__container {
+  position: relative;
   border: 1px solid #fa5533;
   border-radius: 20px;
   width: 249px;
@@ -439,6 +440,45 @@ body {
   margin-top: 20px;
   padding: 20px 13px;
 }
+
+.actual__list__container::before,
+.actual__list__container::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #f53;
+  width: 6px;
+  height: 17px;
+  background-color: var(--second-background-color);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.actual__list__container::before {
+  left: -3px;
+}
+
+.actual__list__container::after {
+  right: -3px;
+}
+
+.actual__list__container div {
+  position: absolute;
+  border: 1px solid #f53;
+  width: 17px;
+  height: 6px;
+  background-color: var(--second-background-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.actual__list__container .top {
+  top: -3px;
+}
+
+.actual__list__container .bottom {
+  bottom: -3px;
+}
+
 .actual__list__container--desc {
   font-size: 16px;
   line-height: 1.56;
